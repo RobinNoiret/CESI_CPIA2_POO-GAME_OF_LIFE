@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="FileManagement-V1.cpp" />
     <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="Grille.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileManager.h" />
+    <ClInclude Include="Grille.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="test.txt" />

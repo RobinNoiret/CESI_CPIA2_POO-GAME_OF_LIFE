@@ -1,26 +1,28 @@
 #include <iostream>
 #include "FileManager.h"
+#include "Grille.h"
+
+using std::cout;
+using std::endl;
+using std::exception;
 
 int main() {
-    file myFile("test.txt", true);  // true pour mode lecture
-
+    file myFile("test.txt", true);
     int l, L;
-    vector<vector<int>> grid;
+    vector<vector<int>> grilleEntree;
 
     try {
-        grid = myFile.readGridFile(l, L);
+        // Lire le fichier
+        grilleEntree = myFile.readGridFile(l, L);
 
-        // Afficher les résultats
-        cout << "l = " << l << endl;
-        cout << "L = " << L << endl;
-        cout << "\nGrille :" << endl;
+        // Créer la grille
+        Grille grille(grilleEntree, l, L);
 
-        for (const auto& row : grid) {
-            for (int cell : row) {
-                cout << cell << " ";
-            }
-            cout << endl;
-        }
+        // Afficher les dimensions
+        cout << "Dimensions : " << l << "x" << L << endl;
+        cout << "\netat initial de la grille :" << endl;
+        grille.afficherGrille();
+
     }
     catch (const exception& e) {
         cout << "Erreur : " << e.what() << endl;
