@@ -1,12 +1,199 @@
 // ConsoleApplication1.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
 //
 
+
+
+
+
+
+#include <vector>
 #include <iostream>
+#include <string>
+
+using namespace std;
+
+//class abstraite
+class Mode {
+	void virtual executer(int iterations) {
+		iterations = 0;
+	}
+
+};
+
+
+class ModeConsole : Mode {
+private:
+	Game& jeu;
+	string file;
+protected:
+
+public:
+	ModeConsole(Game& jeu, string file);
+
+	void executer(int iterations) override {
+
+	}
+};
+
+
+class ModeGraphique : Mode {
+private:
+	Game& jeu;
+	// element SFML
+protected:
+
+public:
+	void executer(int iterations)override {
+
+	}
+};
+
+
+class Game {
+private:
+	Grille grille;
+	int iterations;
+protected:
+
+public:
+	void etatInitial(string file) {
+
+	}
+	
+	int getGrille(...) {
+
+	}
+
+};
+
+
+class Grille {
+private:
+	int Longu, Larg;
+	vector<vector<Cellule>> cellules;
+protected:
+
+
+public:
+
+	Grille() {};
+	// Grille(int Longu, int Larg, cellules ini) {};
+	int getLongu() {
+		return Longu;
+	}
+
+	int getLarg() {
+		return Larg;
+	}
+
+
+
+	void setLongu(int l) {
+
+	}
+
+	void setLarg(int L) {
+
+	}
+
+	void setCellules(...){
+
+	}
+
+	void Afficher(){
+	
+	}
+
+	int nbVoisinVivants(int x, int y) {
+
+	}
+
+	~Grille();
+};
+
+
+class Cellule {
+private:
+	int Colonnes, Lignes;
+	bool etat;
+protected:
+
+
+public:
+
+	Cellule();
+	Cellule(int Colonnes, int Lignes, bool etat);
+
+	int getColonnes() {
+		return Colonnes;
+	}
+
+	int getLignes() {
+		return Lignes;
+	}
+
+	bool getEtat() {
+		return etat;
+	}
+
+	void setColonnes(int Colonnes) {
+
+	}
+
+	void setLignes(int Lignes) {
+
+	}
+
+	void setEtat(bool etat) {
+
+	}
+
+
+	////
+	~Cellule();
+	//// 
+
+};
+
+
+
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+   cout << "Hello World!\n";
+   cout << "feur" << endl;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
 // Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
