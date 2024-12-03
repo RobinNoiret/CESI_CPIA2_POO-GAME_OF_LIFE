@@ -138,7 +138,8 @@
     <ClInclude Include="Grille.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="test.txt" />
+    <Text Include="test_10x10.txt" />
+    <Text Include="test_3x3.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

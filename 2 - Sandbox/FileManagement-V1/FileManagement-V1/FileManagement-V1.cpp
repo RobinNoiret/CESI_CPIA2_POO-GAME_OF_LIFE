@@ -7,7 +7,13 @@ using std::endl;
 using std::exception;
 
 int main() {
-    file myFile("test.txt", true);
+
+    string filePath;
+    cout << "Entrez le nom du fichier source : ";
+    cin >> filePath;
+
+
+    file myFile(filePath, true);
     int l, L;
     vector<vector<int>> grilleEntree;
 
