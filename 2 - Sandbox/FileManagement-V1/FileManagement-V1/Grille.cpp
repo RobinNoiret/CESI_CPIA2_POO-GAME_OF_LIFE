@@ -49,3 +49,76 @@ int Grille::getLignes() const {
 int Grille::getColonnes() const {
     return colonnes;
 }
+
+int Grille::compterVoisinsVivants(int ligne, int colonne) const {
+    int nbVoisinsVivants = 0;
+
+    // Parcourir les 8 cases voisines
+    for (int i = -1; i <= 1; i++) {
+        for (int j = -1; j <= 1; j++) {
+            // Ignorer la cellule elle-même
+            if (i == 0 && j == 0) continue;
+
+            // Calculer les coordonnées du voisin
+            int ligneVoisin = ligne + i;
+            int colonneVoisin = colonne + j;
+
+            // Vérifier si le voisin est dans la grille
+            if (ligneVoisin >= 0 && ligneVoisin < lignes && colonneVoisin >= 0 && colonneVoisin < colonnes) {
+                if (grille[ligneVoisin][colonneVoisin].getEtat()) {
+                    nbVoisinsVivants++;
+                }
+            }
+        }
+    }
+
+    return nbVoisinsVivants;
+}
+
+bool Grille::appliquerRegles(int ligne, int colonne, int nbVoisinsVivants) const {
+    bool etatActuel = grille[ligne][colonne].getEtat();
+
+    if (etatActuel) {
+        // Cellule vivante
+        return nbVoisinsVivants == 2 || nbVoisinsVivants == 3;
+    }
+    else {
+        // Cellule morte
+        return nbVoisinsVivants == 3;
+    }
+}
+
+void Grille::calculerProchaineGeneration() {
+    // Créer une grille temporaire pour savoir quelles cellules doivent changer d'état
+    vector<vector<bool>> doitChanger(lignes, vector<bool>(colonnes, false));
+
+    // Déterminer quelles cellules doivent changer d'état
+    for (int i = 0; i < lignes; i++) {
+        for (int j = 0; j < colonnes; j++) {
+            int voisinsVivants = compterVoisinsVivants(i, j);
+            bool etatActuel = grille[i][j].getEtat();
+
+            if (etatActuel) {
+                // Cellule vivante
+                if (voisinsVivants < 2 || voisinsVivants > 3) {
+                    doitChanger[i][j] = true;  // La cellule doit mourir
+                }
+            }
+            else {
+                // Cellule morte
+                if (voisinsVivants == 3) {
+                    doitChanger[i][j] = true;  // La cellule doit naître
+                }
+            }
+        }
+    }
+
+    // Appliquer les changements d'état
+    for (int i = 0; i < lignes; i++) {
+        for (int j = 0; j < colonnes; j++) {
+            if (doitChanger[i][j]) {
+                grille[i][j].changeEtat();
+            }
+        }
+    }
+}

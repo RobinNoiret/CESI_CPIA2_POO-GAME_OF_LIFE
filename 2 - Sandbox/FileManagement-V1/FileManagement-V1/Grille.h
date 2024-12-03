@@ -12,6 +12,10 @@ private:
     int lignes;
     int colonnes;
 
+private:
+    int compterVoisinsVivants(int ligne, int colonne) const;
+    bool appliquerRegles(int ligne, int colonne, int nbVoisinsVivants) const;
+
 public:
     // Constructeur
     Grille(const vector<vector<int>>& grilleEntree, int l, int L);
@@ -22,6 +26,7 @@ public:
     void afficherGrille() const;
     int getLignes() const;
     int getColonnes() const;
+    void calculerProchaineGeneration();
 };
 
 #endif // GRILLE_H
