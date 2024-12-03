@@ -9,17 +9,24 @@ using std::out_of_range;
 Grille::Grille(const vector<vector<int>>& grilleEntree, int l, int L)
     : lignes(l), colonnes(L) {
     // Redimensionner la grille
-    grille.resize(lignes, vector<bool>(colonnes, false));
+    grille.resize(lignes, vector<Cellule>(colonnes));
 
-    // Convertir les int en bool
+    // Initialiser chaque cellule
     for (int i = 0; i < lignes; i++) {
         for (int j = 0; j < colonnes; j++) {
-            grille[i][j] = (grilleEntree[i][j] == 1);
+            grille[i][j] = Cellule(grilleEntree[i][j] == 1, i, j);
         }
     }
 }
 
-bool Grille::getEtatCellule(int ligne, int colonne) const {
+Cellule& Grille::getCellule(int ligne, int colonne) {
+    if (ligne >= 0 && ligne < lignes && colonne >= 0 && colonne < colonnes) {
+        return grille[ligne][colonne];
+    }
+    throw out_of_range("Position invalide");
+}
+
+const Cellule& Grille::getCellule(int ligne, int colonne) const {
     if (ligne >= 0 && ligne < lignes && colonne >= 0 && colonne < colonnes) {
         return grille[ligne][colonne];
     }
@@ -28,15 +35,11 @@ bool Grille::getEtatCellule(int ligne, int colonne) const {
 
 void Grille::afficherGrille() const {
     for (const auto& ligne : grille) {
-        for (bool cellule : ligne) {
-            cout << (cellule ? "1 " : "0 ");  // Utilisons 1 et 0 pour tester
+        for (const Cellule& cellule : ligne) {
+            cout << (cellule.getEtat() ? "1 " : "0 ");
         }
         cout << endl;
     }
-}
-
-const vector<vector<bool>>& Grille::getGrille() const {
-    return grille;
 }
 
 int Grille::getLignes() const {

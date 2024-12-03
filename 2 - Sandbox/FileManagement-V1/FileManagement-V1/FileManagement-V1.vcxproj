@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cellule.cpp" />
     <ClCompile Include="FileManagement-V1.cpp" />
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Grille.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cellule.h" />
     <ClInclude Include="FileManager.h" />
     <ClInclude Include="Grille.h" />
   </ItemGroup>
