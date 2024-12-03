@@ -18,25 +18,27 @@ int main() {
         // Créer la grille
         Grille grille(grilleEntree, l, L);
 
-        // Afficher les dimensions
+        // Demander le nombre d'itérations à l'utilisateur
+        int nombreIterations;
+        cout << "Entrez le nombre d'iterations souhaite : ";
+        cin >> nombreIterations;
+
+        // Afficher état initial
         cout << "Dimensions : " << l << "x" << L << endl;
-        cout << "\nEtat initial de la grille :" << endl;
+        cout << "\nGeneration 0 :" << endl;
         grille.afficherGrille();
 
-        // Test d'accès à une cellule spécifique
-        cout << "\nEtat de la cellule (0,0) : "
-            << (grille.getCellule(0, 0).getEtat() ? "1" : "0") << endl;
+        // Simuler plusieurs générations
+        for (int gen = 1; gen <= nombreIterations; gen++) {
 
-        // Test modification via accesseur
-        grille.getCellule(0, 0).changeEtat();
+            // Calculer la génération suivante
+            grille.calculerProchaineGeneration();
 
-        // Afficher après modifications
-        cout << "\nEtat apres modifications :" << endl;
-        grille.afficherGrille();
+            // Afficher la nouvelle génération
+            cout << "\nGeneration " << gen << " :" << endl;
+            grille.afficherGrille();
+        }
 
-        // Test d'accès à une cellule spécifique
-        cout << "\nEtat de la cellule (0,0) : "
-            << (grille.getCellule(0, 0).getEtat() ? "1" : "0") << endl;
     }
     catch (const exception& e) {
         cout << "Erreur : " << e.what() << endl;
