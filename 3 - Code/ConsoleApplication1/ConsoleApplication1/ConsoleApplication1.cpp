@@ -162,9 +162,7 @@ public:
 
 int main()
 {
-
-   cout << "Hello World!\n";
-   cout << "feur" << endl;
+    std::cout << "Hello World!\n";
 }
 
 
