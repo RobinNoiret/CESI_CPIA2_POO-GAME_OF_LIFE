@@ -1,20 +1,24 @@
 #ifndef LOGS_MANAGEMENT_H
 #define LOGS_MANAGEMENT_H
 
-#include <string>
 #include "Grille.h"
 
+// Includes bibliothèques
+#include <string>           // Fournit la classe string pour manipuler les chaînes de caractères
+
+// Namespace
 using namespace std;
 
 class LogsManagement {
 private:
-    string dossierSortie;
+    string dossierSortie;   // Nom du dossier de log
 
 public:
-    // Constructeur prenant le nom du fichier d'entrée
+    // Constructeurs
+    LogsManagement() = default;
     LogsManagement(const string& nomFichierEntree);
 
-    // Sauvegarde une génération spécifique de la grille
+    // Méthodes métier
     void sauvegarderGeneration(const Grille& grille, int numeroGeneration);
 };
 

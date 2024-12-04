@@ -3,9 +3,9 @@
 
 class Cellule {
 private:
-    bool etat;
-    int x;
-    int y;
+    bool etat;      // Etat de la cellule
+    int x;          // Coordonnée colonne
+    int y;          // Coordonnée ligne
 
 public:
     // Constructeur
@@ -21,4 +21,4 @@ public:
     void setPosition(int posX, int posY);
 };
 
-#endif // CELLULE_H
+#endif

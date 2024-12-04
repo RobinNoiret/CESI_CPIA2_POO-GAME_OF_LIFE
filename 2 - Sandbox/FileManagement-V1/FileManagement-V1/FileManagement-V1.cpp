@@ -1,5 +1,5 @@
 #include "Game.h"
-#include <iostream>
+#include <iostream>     // Gère les entrées/sorties standard (cout, cin)
 
 using namespace std;
 

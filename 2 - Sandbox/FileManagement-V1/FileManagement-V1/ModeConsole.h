@@ -6,10 +6,13 @@
 
 class ModeConsole : public Mode {
 private:
-    Game& jeu;
+    Game& jeu;      // Le jeu
 
 public:
+    // Constructeur
     ModeConsole(Game& gameRef);
+
+    // Méthode métier
     void executer(int iterations) override;
     void afficherGrille() const;
 };

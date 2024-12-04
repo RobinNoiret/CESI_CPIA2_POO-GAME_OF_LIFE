@@ -1,7 +1,7 @@
 #include "ModeConsole.h"
-#include <iostream>
-#include <thread>
-#include <chrono>
+
+// Include bibliothèque
+#include <iostream>     // Gère les entrées/sorties standard (cout, cin)
 
 using namespace std;
 
@@ -16,7 +16,6 @@ void ModeConsole::executer(int iterations) {
     jeu.sauvegarderEtat(0);  // Sauvegarde de l'état initial
 
     for (int i = 1; i <= iterations; i++) {
-        std::this_thread::sleep_for(std::chrono::seconds(1));
         jeu.nextGeneration();
         cout << "\nGeneration " << i << " :" << endl;
         afficherGrille();

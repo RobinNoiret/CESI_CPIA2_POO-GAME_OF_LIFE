@@ -1,9 +1,12 @@
 #include "LogsManagement.h"
-#include <fstream>
-#include <sstream>
-#include <ctime>
-#include <iomanip>
 
+// Includes bibliothèques
+#include <fstream>      // Gère les opérations de lecture/écriture de fichiers
+#include <sstream>      // Permet de manipuler des chaînes comme des flux
+#include <ctime>        // Offre des fonctions pour manipuler la date et l'heure
+#include <iomanip>      // Fournit des outils pour formater les entrées/sorties
+
+// Namespace
 using namespace std;
 
 LogsManagement::LogsManagement(const string& nomFichierEntree) {
@@ -14,7 +17,7 @@ LogsManagement::LogsManagement(const string& nomFichierEntree) {
 
     // Formater l'horodatage (YYYYMMDD_HHMMSS)
     ostringstream timestamp;
-    timestamp << put_time(&localTime, "%Y%m%d_%H%M%S");
+    timestamp << put_time(&localTime, "%Y%m%d_%H%M%S");     // formater une date/heure (iomanip)
 
     // Extraire le nom du fichier sans l'extension
     size_t pos = nomFichierEntree.find_last_of('.');

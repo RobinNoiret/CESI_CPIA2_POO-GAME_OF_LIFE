@@ -1,6 +1,9 @@
 ﻿#include "Grille.h"
-#include <stdexcept>
 
+// Include Bibliothèque
+#include <stdexcept>    // Fournit les classes standards pour la gestion des exceptions
+
+// Namespace
 using namespace std;
 
 Grille::Grille(const vector<vector<int>>& grilleEntree, int l, int L)
@@ -18,7 +21,7 @@ const Cellule& Grille::getCellule(int ligne, int colonne) const {
     if (ligne >= 0 && ligne < lignes && colonne >= 0 && colonne < colonnes) {
         return grille[ligne][colonne];
     }
-    throw out_of_range("Position invalide");
+    throw out_of_range("Position invalide");        // Exception (stdexcept)
 }
 
 int Grille::getLignes() const {

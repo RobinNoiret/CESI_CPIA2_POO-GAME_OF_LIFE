@@ -1,18 +1,26 @@
 #include "Game.h"
 #include "ModeConsole.h"
 #include "FileManager.h"
-#include <iostream>
 
+// Include Bibliothèque
+#include <iostream>     // Gère les entrées/sorties standard (cout, cin)
+
+// Namespace
 using namespace std;
 
-Game::Game(const std::string& file)
-    : nomFichier(file),
-    logs(file),
-    iterations(0) {  // Initialisation de iterations
+Game::Game(const std::string& file){
+    nomFichier = file;
+    logs = LogsManagement(file);
+    iterations = 0;
+
+    // Lecture du fichier d'entrée
     class file fileManager(file, true);
     int l, L;
     vector<vector<int>> grilleEntree = fileManager.readGridFile(l, L);
+
+    // Création de la grille
     grille = Grille(grilleEntree, l, L);
+
     fileManager.close();
 }
 

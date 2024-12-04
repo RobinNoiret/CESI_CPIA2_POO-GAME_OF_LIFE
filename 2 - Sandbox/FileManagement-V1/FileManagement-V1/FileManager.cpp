@@ -1,6 +1,6 @@
 ﻿#include "FileManager.h"
 
-// Namespace STD
+// Namespace
 using namespace std;
 
 file::file(string name, bool openMode) :name(name), openMode(openMode) {
