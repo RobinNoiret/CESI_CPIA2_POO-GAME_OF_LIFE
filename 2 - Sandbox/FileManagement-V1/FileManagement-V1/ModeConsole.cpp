@@ -3,8 +3,7 @@
 #include <thread>
 #include <chrono>
 
-using std::cout;
-using std::endl;
+using namespace std;
 
 ModeConsole::ModeConsole(Game& gameRef) : jeu(gameRef) {}
 

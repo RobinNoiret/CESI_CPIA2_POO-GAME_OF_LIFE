@@ -1,7 +1,7 @@
 ﻿#include "Grille.h"
 #include <stdexcept>
 
-using std::out_of_range;
+using namespace std;
 
 Grille::Grille(const vector<vector<int>>& grilleEntree, int l, int L)
     : lignes(l), colonnes(L) {

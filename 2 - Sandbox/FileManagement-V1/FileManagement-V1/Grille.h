@@ -4,7 +4,7 @@
 #include <vector>
 #include "Cellule.h"
 
-using std::vector;
+using namespace std;
 
 class Grille {
 private:
