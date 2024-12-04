@@ -130,12 +130,18 @@
     <ClCompile Include="Cellule.cpp" />
     <ClCompile Include="FileManagement-V1.cpp" />
     <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Grille.cpp" />
+    <ClCompile Include="Mode.cpp" />
+    <ClCompile Include="ModeConsole.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cellule.h" />
     <ClInclude Include="FileManager.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Grille.h" />
+    <ClInclude Include="Mode.h" />
+    <ClInclude Include="ModeConsole.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="test_10x10.txt" />

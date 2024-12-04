@@ -12,21 +12,17 @@ private:
     int lignes;
     int colonnes;
 
-private:
-    int compterVoisinsVivants(int ligne, int colonne) const;
-    bool appliquerRegles(int ligne, int colonne, int nbVoisinsVivants) const;
-
 public:
-    // Constructeur
+    Grille() = default;
     Grille(const vector<vector<int>>& grilleEntree, int l, int L);
-
-    // Méthodes d'accès
-    Cellule& getCellule(int ligne, int colonne);
+    void calculerProchaineGeneration();
     const Cellule& getCellule(int ligne, int colonne) const;
-    void afficherGrille() const;
     int getLignes() const;
     int getColonnes() const;
-    void calculerProchaineGeneration();
+
+private:
+    int compterVoisinsVivants(int ligne, int colonne) const;
+    bool doitChanger(int ligne, int colonne) const;
 };
 
-#endif // GRILLE_H
+#endif
