@@ -28,7 +28,7 @@ private:
 protected:
 
 public:
-	ModeConsole(Game& jeu, string file);
+	ModeConsole(Game& jeu, string file) {};
 
 	void executer(int iterations) override {
 
@@ -43,7 +43,8 @@ private:
 protected:
 
 public:
-	void executer(int iterations)override {
+	//Constructeur
+	void executer(int iterations) override {
 
 	}
 };
@@ -59,7 +60,15 @@ public:
 	void etatInitial(string file) {
 
 	}
-	
+
+	void GameModeConsole(...) {
+
+	}
+
+	void GameModeConsole(...) {
+
+	}
+
 	int getGrille(...) {
 
 	}
@@ -70,14 +79,13 @@ public:
 class Grille {
 private:
 	int Longu, Larg;
-	vector<vector<Cellule>> cellules;
+	vector<vector<Cellule>> cellules; // matrice Cellules
 protected:
 
 
 public:
 
-	Grille() {};
-	// Grille(int Longu, int Larg, cellules ini) {};
+	Grille(int Longu, int Larg, cellules ini) {};
 	int getLongu() {
 		return Longu;
 	}
@@ -88,15 +96,18 @@ public:
 
 
 
-	void setLongu(int l) {
+	void setLongu(int Longu) {
 
 	}
 
-	void setLarg(int L) {
+	void setLarg(int Larg) {
 
 	}
 
 	void setCellules(...){
+
+	}
+	void Init(...) {
 
 	}
 
@@ -104,11 +115,11 @@ public:
 	
 	}
 
-	int nbVoisinVivants(int x, int y) {
+	int nbVoisinVivants(int Colonnes, int Lignes) {
 
 	}
 
-	~Grille();
+	~Grille() {};
 };
 
 
@@ -121,8 +132,8 @@ protected:
 
 public:
 
-	Cellule();
-	Cellule(int Colonnes, int Lignes, bool etat);
+	Cellule() {};
+	Cellule(int Colonnes, int Lignes, bool etat) {};
 
 	int getColonnes() {
 		return Colonnes;
@@ -150,7 +161,7 @@ public:
 
 
 	////
-	~Cellule();
+	~Cellule() {};
 	//// 
 
 };
@@ -162,7 +173,7 @@ public:
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
 }
 
 
