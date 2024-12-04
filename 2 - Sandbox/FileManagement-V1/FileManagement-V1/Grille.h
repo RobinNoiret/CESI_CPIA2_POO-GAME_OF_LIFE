@@ -13,7 +13,7 @@ private:
     int colonnes;
 
 public:
-    Grille() = default;
+    Grille() : lignes(0), colonnes(0) {}
     Grille(const vector<vector<int>>& grilleEntree, int l, int L);
     void calculerProchaineGeneration();
     const Cellule& getCellule(int ligne, int colonne) const;

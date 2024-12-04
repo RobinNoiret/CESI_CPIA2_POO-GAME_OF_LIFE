@@ -5,12 +5,15 @@
 
 using namespace std;
 
-Game::Game(const std::string& filename) {
-    file myFile(filename, true);
+Game::Game(const std::string& file)
+    : nomFichier(file),
+    logs(file),
+    iterations(0) {  // Initialisation de iterations
+    class file fileManager(file, true);
     int l, L;
-    vector<vector<int>> grilleEntree = myFile.readGridFile(l, L);
+    vector<vector<int>> grilleEntree = fileManager.readGridFile(l, L);
     grille = Grille(grilleEntree, l, L);
-    myFile.close();
+    fileManager.close();
 }
 
 void Game::GameModeConsole() {
@@ -20,12 +23,12 @@ void Game::GameModeConsole() {
     mode.executer(iterations);
 }
 
-void Game::GameModeGraphique() {
-    // À implémenter plus tard
-}
-
 void Game::nextGeneration() {
     grille.calculerProchaineGeneration();
+}
+
+void Game::sauvegarderEtat(int numeroGeneration) {
+    logs.sauvegarderGeneration(grille, numeroGeneration);
 }
 
 const Grille& Game::getGrille() const {

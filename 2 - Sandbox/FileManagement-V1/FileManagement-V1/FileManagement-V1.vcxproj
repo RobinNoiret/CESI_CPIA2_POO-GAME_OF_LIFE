@@ -133,6 +133,7 @@
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Grille.cpp" />
+    <ClCompile Include="LogsManagement.cpp" />
     <ClCompile Include="ModeConsole.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +141,7 @@
     <ClInclude Include="FileManager.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Grille.h" />
+    <ClInclude Include="LogsManagement.h" />
     <ClInclude Include="Mode.h" />
     <ClInclude Include="ModeConsole.h" />
   </ItemGroup>

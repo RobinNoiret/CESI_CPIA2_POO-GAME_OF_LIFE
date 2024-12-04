@@ -85,7 +85,7 @@ void file::write(string towrite) {
 		fluxout << towrite << endl;
 	}
 	else {
-		cout << "Impossible d'�crire dans ce fichier" << endl;
+		cout << "Impossible d'ecrire dans ce fichier" << endl;
 	}
 }
 
