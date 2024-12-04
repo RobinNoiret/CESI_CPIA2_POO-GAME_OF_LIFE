@@ -3,9 +3,7 @@
 #include "FileManager.h"
 #include <iostream>
 
-using std::cout;
-using std::cin;
-using std::endl;
+using namespace std;
 
 Game::Game(const std::string& filename) {
     file myFile(filename, true);

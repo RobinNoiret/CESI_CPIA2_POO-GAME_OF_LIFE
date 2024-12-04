@@ -59,16 +59,10 @@ vector<vector<int>> file::readGridFile(int& l, int& L) {
 	string line;
 	vector<vector<int>> grid;
 
-	// Lecture de l
+	// Lecture des dimensions (première ligne)
 	getline(fluxin, line);
-	l = stoi(line.substr(line.find("=") + 1));
-
-	// Lecture de L
-	getline(fluxin, line);
-	L = stoi(line.substr(line.find("=") + 1));
-
-	// Ignorer la ligne vide
-	getline(fluxin, line);
+	istringstream iss_dim(line);
+	iss_dim >> l >> L;
 
 	// Lecture de la grille
 	while (getline(fluxin, line)) {
@@ -82,7 +76,6 @@ vector<vector<int>> file::readGridFile(int& l, int& L) {
 			grid.push_back(row);
 		}
 	}
-
 	return grid;
 }
 
