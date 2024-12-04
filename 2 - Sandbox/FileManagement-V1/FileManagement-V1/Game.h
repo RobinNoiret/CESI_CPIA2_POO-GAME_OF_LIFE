@@ -20,7 +20,7 @@ public:
 
     // Méthodes des modes
     void GameModeConsole();
-    //void GameModeGraphique();
+    void GameModeGraphique();
 
     // Méthodes métiers
     void nextGeneration();

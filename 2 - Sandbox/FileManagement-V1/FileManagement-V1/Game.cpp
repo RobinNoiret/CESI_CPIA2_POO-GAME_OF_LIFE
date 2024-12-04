@@ -1,6 +1,7 @@
 #include "Game.h"
 #include "ModeConsole.h"
 #include "FileManager.h"
+#include "ModeGraphique.h"
 
 // Include Bibliothèque
 #include <iostream>     // Gère les entrées/sorties standard (cout, cin)
@@ -28,6 +29,14 @@ void Game::GameModeConsole() {
     ModeConsole mode(*this);
     cout << "Entrez le nombre d'iterations souhaite : ";
     cin >> iterations;
+    mode.executer(iterations);
+}
+
+void Game::GameModeGraphique() {
+    cout << "Entrez le nombre d'iterations souhaite : ";
+    cin >> iterations;
+
+    ModeGraphique mode(*this);
     mode.executer(iterations);
 }
 

@@ -138,6 +138,7 @@
     <ClCompile Include="Grille.cpp" />
     <ClCompile Include="LogsManagement.cpp" />
     <ClCompile Include="ModeConsole.cpp" />
+    <ClCompile Include="ModeGraphique.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cellule.h" />
@@ -147,6 +148,7 @@
     <ClInclude Include="LogsManagement.h" />
     <ClInclude Include="Mode.h" />
     <ClInclude Include="ModeConsole.h" />
+    <ClInclude Include="ModeGraphique.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="test_10x10.txt" />

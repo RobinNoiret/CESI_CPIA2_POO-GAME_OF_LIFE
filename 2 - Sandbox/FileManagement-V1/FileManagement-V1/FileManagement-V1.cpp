@@ -1,20 +1,38 @@
 #include "Game.h"
-#include <iostream>     // Gère les entrées/sorties standard (cout, cin)
+#include <iostream>
 
 using namespace std;
 
 int main() {
     try {
+        // Demande du fichier source
         string filePath;
         cout << "Entrez le nom du fichier source : ";
         cin >> filePath;
 
-        // Créer le jeu avec le fichier spécifié
+        // Création du jeu
         Game jeu(filePath);
 
-        // Lancer le mode console
-        jeu.GameModeConsole();
+        // Choix du mode
+        int choixMode;
+        cout << "\nChoisissez le mode :" << endl;
+        cout << "1. Mode Console" << endl;
+        cout << "2. Mode Graphique" << endl;
+        cout << "Votre choix : ";
+        cin >> choixMode;
 
+        // Lancement du mode choisi
+        switch (choixMode) {
+        case 1:
+            jeu.GameModeConsole();
+            break;
+        case 2:
+            jeu.GameModeGraphique();
+            break;
+        default:
+            cout << "Mode invalide" << endl;
+            break;
+        }
     }
     catch (const exception& e) {
         cout << "Erreur : " << e.what() << endl;
