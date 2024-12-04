@@ -16,12 +16,8 @@ ModeGraphique::ModeGraphique(Game& gameRef) : jeu(gameRef) {
 }
 
 void ModeGraphique::executer(int iterations) {
-    std::cout << "Debut execution mode graphique" << std::endl;
-
     int generationActuelle = 0;
     sf::Clock clock;
-
-    // Sauvegarde de l'état initial
     jeu.sauvegarderEtat(0);
 
     while (fenetre.isOpen() && generationActuelle <= iterations) {
@@ -31,24 +27,19 @@ void ModeGraphique::executer(int iterations) {
                 fenetre.close();
         }
 
-        // Mise à jour de la génération toutes les secondes
         if (clock.getElapsedTime().asSeconds() >= 1.0f && generationActuelle < iterations) {
-            std::cout << "Generation " << generationActuelle + 1 << std::endl;
             jeu.nextGeneration();
             generationActuelle++;
-            // Sauvegarde de l'état après chaque génération
             jeu.sauvegarderEtat(generationActuelle);
             clock.restart();
         }
 
-        // Affichage
-        fenetre.clear(sf::Color::White);
+        fenetre.clear(sf::Color::White);  // Fond blanc
         dessinerGrille();
         fenetre.display();
 
-        // Fermer la fenêtre si on a fini toutes les générations
         if (generationActuelle >= iterations) {
-            std::cout << "Simulation terminee" << std::endl;
+            sf::sleep(sf::seconds(2));
             fenetre.close();
         }
     }
@@ -65,16 +56,14 @@ void ModeGraphique::dessinerGrille() {
             cellule.setPosition(static_cast<float>(j * TAILLE_CELLULE),
                 static_cast<float>(i * TAILLE_CELLULE));
 
-            // Debug : utiliser des couleurs plus visibles
-            if (grille.getCellule(i, j).getEtat()) {
-                cellule.setFillColor(sf::Color::Red);  // Cellules vivantes en rouge
-            }
-            else {
-                cellule.setFillColor(sf::Color::Green);  // Cellules mortes en vert
-            }
+            // Cellules noires pour les vivantes, blanches pour les mortes
+            cellule.setFillColor(grille.getCellule(i, j).getEtat() ?
+                sf::Color::Black : sf::Color::White);
 
+            // Fine bordure grise pour la grille
             cellule.setOutlineThickness(1);
-            cellule.setOutlineColor(sf::Color::Black);
+            cellule.setOutlineColor(sf::Color(200, 200, 200));
+
             fenetre.draw(cellule);
         }
     }
