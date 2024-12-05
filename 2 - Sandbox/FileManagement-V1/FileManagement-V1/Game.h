@@ -27,6 +27,8 @@ public:
 
     // Méthodes métiers
     void demanderModeGrille();
+    void demanderItérations();
+
     void nextGeneration();
     const Grille& getGrille() const;
     void sauvegarderEtat(int numeroGeneration);
