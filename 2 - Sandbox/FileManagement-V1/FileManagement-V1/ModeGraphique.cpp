@@ -1,12 +1,12 @@
 #include "ModeGraphique.h"
 #include <iostream>
 
-ModeGraphique::ModeGraphique(Game& gameRef) : jeu(gameRef) {
-    const Grille& grille = jeu.getGrille();
+ModeGraphique::ModeGraphique(Game& gameRef, float delaiIterations)
+    : jeu(gameRef)
+{
+    delai = delaiIterations;
 
-    // Afficher les dimensions pour debug
-    std::cout << "Creation fenetre : " << grille.getColonnes() * TAILLE_CELLULE
-        << "x" << grille.getLignes() * TAILLE_CELLULE << std::endl;
+    const Grille& grille = jeu.getGrille();
 
     fenetre.create(
         sf::VideoMode(grille.getColonnes() * TAILLE_CELLULE,
@@ -27,14 +27,14 @@ void ModeGraphique::executer(int iterations) {
                 fenetre.close();
         }
 
-        if (clock.getElapsedTime().asSeconds() >= 1.0f && generationActuelle < iterations) {
+        if (clock.getElapsedTime().asSeconds() >= delai && generationActuelle < iterations) {
             jeu.nextGeneration();
             generationActuelle++;
             jeu.sauvegarderEtat(generationActuelle);
             clock.restart();
         }
 
-        fenetre.clear(sf::Color::White);  // Fond blanc
+        fenetre.clear(sf::Color::White);
         dessinerGrille();
         fenetre.display();
 

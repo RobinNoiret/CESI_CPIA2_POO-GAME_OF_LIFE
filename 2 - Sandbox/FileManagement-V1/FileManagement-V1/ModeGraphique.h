@@ -9,10 +9,11 @@ class ModeGraphique : public Mode {
 private:
     Game& jeu;
     sf::RenderWindow fenetre;
-    const int TAILLE_CELLULE = 20;
+    const int TAILLE_CELLULE = 10;
+    float delai;
 
 public:
-    ModeGraphique(Game& gameRef);
+    ModeGraphique(Game& gameRef, float delaiIterations);
     void executer(int iterations) override;
     void dessinerGrille();
 };

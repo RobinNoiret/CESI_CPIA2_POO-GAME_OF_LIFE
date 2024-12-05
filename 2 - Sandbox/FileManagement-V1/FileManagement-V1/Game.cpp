@@ -36,7 +36,11 @@ void Game::GameModeGraphique() {
     cout << "Entrez le nombre d'iterations souhaite : ";
     cin >> iterations;
 
-    ModeGraphique mode(*this);
+    float delaiEntreIterations;
+    cout << "Entrez le delai entre les iterations (en secondes) : ";
+    cin >> delaiEntreIterations;
+
+    ModeGraphique mode(*this, delaiEntreIterations);
     mode.executer(iterations);
 }
 
