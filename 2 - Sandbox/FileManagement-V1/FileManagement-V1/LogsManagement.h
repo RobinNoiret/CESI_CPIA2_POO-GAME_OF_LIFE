@@ -12,6 +12,7 @@ using namespace std;
 class LogsManagement {
 private:
     string dossierSortie;   // Nom du dossier de log
+    bool comparerFichiers(const string& fichier1, const string& fichier2);
 
 public:
     // Constructeurs
@@ -20,6 +21,7 @@ public:
 
     // Méthodes métier
     void sauvegarderGeneration(const Grille& grille, int numeroGeneration);
+    bool estStable(int generation);
 };
 
 #endif

@@ -20,29 +20,39 @@ void ModeGraphique::executer(int iterations) {
     sf::Clock clock;
     jeu.sauvegarderEtat(0);
 
-    while (fenetre.isOpen() && generationActuelle <= iterations) {
+    while (fenetre.isOpen() && generationActuelle < iterations) {
         sf::Event event;
         while (fenetre.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 fenetre.close();
         }
 
-        if (clock.getElapsedTime().asSeconds() >= delai && generationActuelle < iterations) {
+        if (clock.getElapsedTime().asSeconds() >= delai) {
             jeu.nextGeneration();
             generationActuelle++;
+
             jeu.sauvegarderEtat(generationActuelle);
+
+            // Vérifier la stabilité
+            if (jeu.estStable(generationActuelle)) {
+                std::cout << "L'automate est stable apres " << generationActuelle << " generations." << std::endl;
+                break;
+            }
+
             clock.restart();
         }
 
         fenetre.clear(sf::Color::White);
         dessinerGrille();
         fenetre.display();
-
-        if (generationActuelle >= iterations) {
-            sf::sleep(sf::seconds(2));
-            fenetre.close();
-        }
     }
+
+    if (generationActuelle >= iterations) {
+        std::cout << "Nombre maximum d'iterations atteint (" << iterations << ")." << std::endl;
+    }
+
+    sf::sleep(sf::seconds(2));
+    fenetre.close();
 }
 
 void ModeGraphique::dessinerGrille() {

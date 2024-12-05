@@ -26,6 +26,7 @@ public:
     void nextGeneration();
     const Grille& getGrille() const;
     void sauvegarderEtat(int numeroGeneration);
+    bool estStable(int generation);
 };
 
 #endif

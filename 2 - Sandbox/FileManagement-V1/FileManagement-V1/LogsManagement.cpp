@@ -56,3 +56,28 @@ void LogsManagement::sauvegarderGeneration(const Grille& grille, int numeroGener
         fichier << endl;
     }
 }
+
+bool LogsManagement::estStable(int generation) {
+    if (generation < 1) return false;
+
+    // Construire les noms des deux derniers fichiers
+    string baseNom = dossierSortie.substr(0, dossierSortie.find("_out_"));
+    string fichierActuel = dossierSortie + "/" + baseNom + "_" + to_string(generation) + ".txt";
+    string fichierPrecedent = dossierSortie + "/" + baseNom + "_" + to_string(generation - 1) + ".txt";
+
+    return comparerFichiers(fichierActuel, fichierPrecedent);
+}
+
+bool LogsManagement::comparerFichiers(const string& fichier1, const string& fichier2) {
+    ifstream f1(fichier1);
+    ifstream f2(fichier2);
+
+    if (!f1.is_open() || !f2.is_open()) return false;
+
+    string ligne1, ligne2;
+    while (getline(f1, ligne1) && getline(f2, ligne2)) {
+        if (ligne1 != ligne2) return false;
+    }
+
+    return true;
+}

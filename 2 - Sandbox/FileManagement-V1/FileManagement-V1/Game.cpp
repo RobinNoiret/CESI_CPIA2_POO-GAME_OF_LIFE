@@ -55,3 +55,7 @@ void Game::sauvegarderEtat(int numeroGeneration) {
 const Grille& Game::getGrille() const {
     return grille;
 }
+
+bool Game::estStable(int generation) {
+    return logs.estStable(generation);
+}
