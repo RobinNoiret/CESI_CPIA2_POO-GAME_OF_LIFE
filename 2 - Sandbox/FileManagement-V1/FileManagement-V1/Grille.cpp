@@ -7,7 +7,7 @@
 using namespace std;
 
 Grille::Grille(const vector<vector<int>>& grilleEntree, int l, int L)
-    : lignes(l), colonnes(L) {
+    : lignes(l), colonnes(L), estTorique(false) {
     grille.resize(lignes, vector<Cellule>(colonnes));
 
     for (int i = 0; i < lignes; i++) {
@@ -34,23 +34,23 @@ int Grille::getColonnes() const {
 
 int Grille::compterVoisinsVivants(int ligne, int colonne) const {
     int nbVoisinsVivants = 0;
-
     for (int i = -1; i <= 1; i++) {
         for (int j = -1; j <= 1; j++) {
             if (i == 0 && j == 0) continue;
 
-            int ligneVoisin = ligne + i;
-            int colonneVoisin = colonne + j;
+            int ligneVoisin = getVoisinLigne(ligne, i);
+            int colonneVoisin = getVoisinColonne(colonne, j);
 
-            if (ligneVoisin >= 0 && ligneVoisin < lignes &&
-                colonneVoisin >= 0 && colonneVoisin < colonnes) {
-                if (grille[ligneVoisin][colonneVoisin].getEtat()) {
-                    nbVoisinsVivants++;
-                }
+            if (!estTorique && (ligneVoisin < 0 || ligneVoisin >= lignes ||
+                colonneVoisin < 0 || colonneVoisin >= colonnes)) {
+                continue;
+            }
+
+            if (grille[ligneVoisin][colonneVoisin].getEtat()) {
+                nbVoisinsVivants++;
             }
         }
     }
-
     return nbVoisinsVivants;
 }
 
@@ -82,4 +82,26 @@ void Grille::calculerProchaineGeneration() {
             }
         }
     }
+}
+
+int Grille::getVoisinLigne(int ligne, int offset) const {
+    if (estTorique) {
+        return (ligne + offset + lignes) % lignes;
+    }
+    return ligne + offset;
+}
+
+int Grille::getVoisinColonne(int colonne, int offset) const {
+    if (estTorique) {
+        return (colonne + offset + colonnes) % colonnes;
+    }
+    return colonne + offset;
+}
+
+void Grille::setTorique(bool torique) {
+    estTorique = torique;
+}
+
+bool Grille::getTorique() const {
+    return estTorique;
 }

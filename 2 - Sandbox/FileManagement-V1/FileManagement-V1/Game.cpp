@@ -26,20 +26,20 @@ Game::Game(const std::string& file){
 }
 
 void Game::GameModeConsole() {
-    ModeConsole mode(*this);
+    demanderModeGrille();
     cout << "Entrez le nombre d'iterations souhaite : ";
     cin >> iterations;
+    ModeConsole mode(*this);
     mode.executer(iterations);
 }
 
 void Game::GameModeGraphique() {
+    demanderModeGrille();
     cout << "Entrez le nombre d'iterations souhaite : ";
     cin >> iterations;
-
     float delaiEntreIterations;
     cout << "Entrez le delai entre les iterations (en secondes) : ";
     cin >> delaiEntreIterations;
-
     ModeGraphique mode(*this, delaiEntreIterations);
     mode.executer(iterations);
 }
@@ -58,4 +58,11 @@ const Grille& Game::getGrille() const {
 
 bool Game::estStable(int generation) {
     return logs.estStable(generation);
+}
+
+void Game::demanderModeGrille() {
+    char choix;
+    cout << "Utiliser une grille torique ? (o/n) : ";
+    cin >> choix;
+    grille.setTorique(choix == 'o' || choix == 'O');
 }
