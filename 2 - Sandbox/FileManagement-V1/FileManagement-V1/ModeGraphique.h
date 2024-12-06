@@ -12,6 +12,10 @@ private:
     const int TAILLE_CELLULE = 10;
     float delai;
 
+    const int UI_HEIGHT = 30;
+    sf::Font font;
+    void afficherInformations(int generation, int totalGenerations);
+
 public:
     ModeGraphique(Game& gameRef, float delaiIterations);
     void executer(int iterations) override;

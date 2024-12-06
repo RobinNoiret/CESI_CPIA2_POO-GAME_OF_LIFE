@@ -1,6 +1,8 @@
 #include "ModeGraphique.h"
 #include <iostream>
 
+using namespace std;
+
 ModeGraphique::ModeGraphique(Game& gameRef, float delaiIterations)
     : jeu(gameRef)
 {
@@ -13,6 +15,9 @@ ModeGraphique::ModeGraphique(Game& gameRef, float delaiIterations)
             grille.getLignes() * TAILLE_CELLULE),
         "Jeu de la Vie"
     );
+    if (!font.loadFromFile("C:\\Windows\\Fonts\\arial.ttf")) {
+        cout << "Erreur chargement police" << endl;
+    }
 }
 
 void ModeGraphique::executer(int iterations) {
@@ -35,7 +40,7 @@ void ModeGraphique::executer(int iterations) {
 
             // Vérifier la stabilité
             if (jeu.estStable(generationActuelle)) {
-                std::cout << "L'automate est stable apres " << generationActuelle << " generations." << std::endl;
+                cout << "L'automate est stable apres " << generationActuelle << " generations." << endl;
                 break;
             }
 
@@ -44,11 +49,12 @@ void ModeGraphique::executer(int iterations) {
 
         fenetre.clear(sf::Color::White);
         dessinerGrille();
+        afficherInformations(generationActuelle, iterations);
         fenetre.display();
     }
 
     if (generationActuelle >= iterations) {
-        std::cout << "Nombre maximum d'iterations atteint (" << iterations << ")." << std::endl;
+        cout << "Nombre maximum d'iterations atteint (" << iterations << ")." << endl;
     }
 
     sf::sleep(sf::seconds(2));
@@ -77,4 +83,26 @@ void ModeGraphique::dessinerGrille() {
             fenetre.draw(cellule);
         }
     }
+}
+
+void ModeGraphique::afficherInformations(int generation, int totalGenerations) {
+    // Rectangle de fond pour la zone UI
+    sf::RectangleShape fond;
+    fond.setSize(sf::Vector2f(fenetre.getSize().x, UI_HEIGHT));
+    fond.setPosition(0, fenetre.getSize().y - UI_HEIGHT);
+    fond.setFillColor(sf::Color(240, 240, 240));
+    fenetre.draw(fond);
+
+    // Texte des informations
+    sf::Text informations;
+    informations.setFont(font);
+    informations.setCharacterSize(15);
+    informations.setFillColor(sf::Color::Black);
+    informations.setPosition(10, fenetre.getSize().y - 25);
+
+    string texte = "Generation: " + to_string(generation) + "/" + to_string(totalGenerations);
+    texte += "            | Grille: " + string(jeu.getGrille().getTorique() ? "Torique" : "Non-torique");
+    informations.setString(texte);
+
+    fenetre.draw(informations);
 }
