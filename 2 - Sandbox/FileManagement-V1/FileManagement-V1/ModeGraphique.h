@@ -9,7 +9,7 @@ class ModeGraphique : public Mode {
 private:
     Game& jeu;
     sf::RenderWindow fenetre;
-    const int TAILLE_CELLULE = 20;
+    const int TAILLE_CELLULE = 10;
     float delai;
 
     const int UI_HEIGHT = 30;
