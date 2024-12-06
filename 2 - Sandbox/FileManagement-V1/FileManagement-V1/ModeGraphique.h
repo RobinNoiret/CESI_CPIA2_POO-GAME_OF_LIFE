@@ -14,6 +14,7 @@ private:
 
     const int UI_HEIGHT = 30;
     sf::Font font;
+    bool pause;
     void afficherInformations(int generation, int totalGenerations);
 
 public:

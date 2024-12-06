@@ -7,6 +7,7 @@ ModeGraphique::ModeGraphique(Game& gameRef, float delaiIterations)
     : jeu(gameRef)
 {
     delai = delaiIterations;
+    pause = false;
 
     const Grille& grille = jeu.getGrille();
 
@@ -30,20 +31,15 @@ void ModeGraphique::executer(int iterations) {
         while (fenetre.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 fenetre.close();
+            if (event.type == sf::Event::KeyPressed) {
+                if (event.key.code == sf::Keyboard::Space)
+                    pause = !pause;
+            }
         }
 
-        if (clock.getElapsedTime().asSeconds() >= delai) {
+        if (!pause && clock.getElapsedTime().asSeconds() >= delai) {
             jeu.nextGeneration();
             generationActuelle++;
-
-            jeu.sauvegarderEtat(generationActuelle);
-
-            // Vérifier la stabilité
-            if (jeu.estStable(generationActuelle)) {
-                cout << "L'automate est stable apres " << generationActuelle << " generations." << endl;
-                break;
-            }
-
             clock.restart();
         }
 
@@ -52,13 +48,6 @@ void ModeGraphique::executer(int iterations) {
         afficherInformations(generationActuelle, iterations);
         fenetre.display();
     }
-
-    if (generationActuelle >= iterations) {
-        cout << "Nombre maximum d'iterations atteint (" << iterations << ")." << endl;
-    }
-
-    sf::sleep(sf::seconds(2));
-    fenetre.close();
 }
 
 void ModeGraphique::dessinerGrille() {
@@ -100,8 +89,9 @@ void ModeGraphique::afficherInformations(int generation, int totalGenerations) {
     informations.setFillColor(sf::Color::Black);
     informations.setPosition(10, fenetre.getSize().y - 25);
 
-    string texte = "Generation: " + to_string(generation) + "/" + to_string(totalGenerations);
-    texte += "            | Grille: " + string(jeu.getGrille().getTorique() ? "Torique" : "Non-torique");
+    std::string texte = "Generation: " + std::to_string(generation) + "/" + std::to_string(totalGenerations);
+    texte += " | Grille: " + std::string(jeu.getGrille().getTorique() ? "Torique" : "Non-torique");
+    texte += "                                                      " + std::string(pause ? "PAUSE" : "EN COURS");
     informations.setString(texte);
 
     fenetre.draw(informations);
