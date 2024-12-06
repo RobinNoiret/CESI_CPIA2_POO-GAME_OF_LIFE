@@ -30,9 +30,10 @@ public:
 
     // Méthodes métiers
     void calculerProchaineGeneration();
+    /*int compterVoisinsVivants(int ligne, int colonne) const;*/        // Uniquement pour les tests unitaires
 
 private:
-    int compterVoisinsVivants(int ligne, int colonne) const;
+    int compterVoisinsVivants(int ligne, int colonne) const;            // Le bon du programme
     bool doitChanger(int ligne, int colonne) const;
     int getVoisinLigne(int ligne, int offset) const;
     int getVoisinColonne(int colonne, int offset) const;

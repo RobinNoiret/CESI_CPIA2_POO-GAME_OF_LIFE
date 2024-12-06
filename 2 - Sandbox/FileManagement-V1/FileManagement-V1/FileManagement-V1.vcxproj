@@ -139,6 +139,9 @@
     <ClCompile Include="LogsManagement.cpp" />
     <ClCompile Include="ModeConsole.cpp" />
     <ClCompile Include="ModeGraphique.cpp" />
+    <ClCompile Include="UnitTest_Cellule.cpp" />
+    <ClCompile Include="UnitTest_Game.cpp" />
+    <ClCompile Include="UnitTest_Grille.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cellule.h" />

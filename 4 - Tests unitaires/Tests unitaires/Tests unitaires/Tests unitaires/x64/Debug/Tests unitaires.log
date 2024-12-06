@@ -1,0 +1,536 @@
+﻿  Cellule.cpp
+  CelluleTest.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5): error C2144: erreur de syntaxe : 'int' doit être précédé de ';'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5): error C2086: 'int define' : redéfinition
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de 'define'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5): error C2086: 'int _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING' : redéfinition
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1957,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1957,5): error C2086: 'int define' : redéfinition
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de 'define'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1957,5): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1957,5): error C2144: erreur de syntaxe : 'int' doit être précédé de ';'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1957,5): error C2086: 'int _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING' : redéfinition
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wio.h(153,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wio.h(153,1): error C2491: '_wmktemp' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wio.h(153,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(100,5): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(100,5): error C2491: 'wcscat' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(100,5): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(119,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(119,1): error C2491: 'wcscpy' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(119,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(383,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(383,1): error C2491: '_wcslwr' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(383,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(419,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(419,1): error C2491: '_wcsupr' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(419,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(135,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(135,1): error C2491: '_wstrdate' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(135,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(151,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(151,1): error C2491: '_wstrtime' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(151,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\wchar.h(99,5): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\wchar.h(99,5): error C2491: 'mbsrtowcs' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\wchar.h(99,5): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(924,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(924,1): error C2491: 'mbstowcs' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(924,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(1012,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(1012,1): error C2491: 'wcstombs' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(1012,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C2086: 'int define' : redéfinition
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de 'define'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C2144: erreur de syntaxe : 'char' doit être précédé de ';'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C2086: 'int _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING' : redéfinition
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C2086: 'int define' : redéfinition
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de 'define'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C2144: erreur de syntaxe : 'char' doit être précédé de ';'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C2086: 'int _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING' : redéfinition
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(230,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(230,1): error C2491: '_strlwr' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(230,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C2086: 'int define' : redéfinition
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de 'define'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C2144: erreur de syntaxe : 'char' doit être précédé de ';'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C2086: 'int _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING' : redéfinition
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(452,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(452,1): error C2491: '_strupr' : définition de données dllimport non autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(452,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2143: erreur de syntaxe : absence de ')' avant '__cdecl'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2059: erreur de syntaxe : '__cdecl'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2947: '>' attendu pour terminer template-argument-list, '>' trouvé
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2332: 'struct' : nom de balise manquant
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C3306: 'std::<unnamed-tag>' : la classe sans nom modèle n'est pas autorisée
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2146: erreur de syntaxe : absence de '>' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1):
+      le contexte d’instanciation du modèle (le plus ancien) est
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1):
+          lors de la compilation du modèle de classe 'std::<unnamed-tag>'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C3770: 'unknown-type' : n'est pas une classe de base valide
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2146: erreur de syntaxe : absence de '>' avant l'identificateur 'define'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2062: type 'unknown-type' inattendu
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2143: erreur de syntaxe : absence de ')' avant '__vectorcall'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2059: erreur de syntaxe : '__vectorcall'
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2953: 'std::<unnamed-tag>' : modèle de classe déjà défini
+  (compiler le fichier source 'CelluleTest.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1):
+      voir la déclaration de 'std::<unnamed-tag>'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C1003: le nombre d'erreurs est supérieur à 100 ; arrêt de la compilation
+  (compiler le fichier source 'CelluleTest.cpp')
+  
+  Tests unitaires.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5): error C2144: erreur de syntaxe : 'int' doit être précédé de ';'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5): error C2086: 'int define' : redéfinition
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de 'define'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5): error C2086: 'int _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING' : redéfinition
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1957,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1957,5): error C2086: 'int define' : redéfinition
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de 'define'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1957,5): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1957,5): error C2144: erreur de syntaxe : 'int' doit être précédé de ';'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1957,5): error C2086: 'int _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING' : redéfinition
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wio.h(153,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wio.h(153,1): error C2491: '_wmktemp' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wio.h(153,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(100,5): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(100,5): error C2491: 'wcscat' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(100,5): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(119,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(119,1): error C2491: 'wcscpy' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(119,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(383,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(383,1): error C2491: '_wcslwr' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(383,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(419,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(419,1): error C2491: '_wcsupr' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(419,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(135,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(135,1): error C2491: '_wstrdate' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(135,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(151,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(151,1): error C2491: '_wstrtime' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h(151,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\wchar.h(99,5): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\wchar.h(99,5): error C2491: 'mbsrtowcs' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\wchar.h(99,5): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(924,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(924,1): error C2491: 'mbstowcs' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(924,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(1012,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(1012,1): error C2491: 'wcstombs' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h(1012,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C2086: 'int define' : redéfinition
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de 'define'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C2144: erreur de syntaxe : 'char' doit être précédé de ';'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C2086: 'int _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING' : redéfinition
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(91,5): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C2086: 'int define' : redéfinition
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de 'define'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C2144: erreur de syntaxe : 'char' doit être précédé de ';'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C2086: 'int _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING' : redéfinition
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(130,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(230,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(230,1): error C2491: '_strlwr' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(230,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C2086: 'int define' : redéfinition
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de 'define'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C2144: erreur de syntaxe : 'char' doit être précédé de ';'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C2086: 'int _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING' : redéfinition
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdio.h(1783,5):
+      voir la déclaration de '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(423,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(452,1): warning C4229: anachronisme utilisé : modificateurs de données ignorés
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(452,1): error C2491: '_strupr' : définition de données dllimport non autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\string.h(452,1): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2143: erreur de syntaxe : absence de ')' avant '__cdecl'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2059: erreur de syntaxe : '__cdecl'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2947: '>' attendu pour terminer template-argument-list, '>' trouvé
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2332: 'struct' : nom de balise manquant
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C3306: 'std::<unnamed-tag>' : la classe sans nom modèle n'est pas autorisée
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2146: erreur de syntaxe : absence de '>' avant l'identificateur '_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1):
+      le contexte d’instanciation du modèle (le plus ancien) est
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1):
+          lors de la compilation du modèle de classe 'std::<unnamed-tag>'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C3770: 'unknown-type' : n'est pas une classe de base valide
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2146: erreur de syntaxe : absence de '>' avant l'identificateur 'define'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2062: type 'unknown-type' inattendu
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2143: erreur de syntaxe : absence de ')' avant '__vectorcall'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2059: erreur de syntaxe : '__vectorcall'
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C2953: 'std::<unnamed-tag>' : modèle de classe déjà défini
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1):
+      voir la déclaration de 'std::<unnamed-tag>'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(527,1): error C1003: le nombre d'erreurs est supérieur à 100 ; arrêt de la compilation
+  (compiler le fichier source 'Tests%20unitaires.cpp')
+  
+  Génération de code en cours...
