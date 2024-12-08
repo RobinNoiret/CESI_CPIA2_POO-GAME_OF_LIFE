@@ -29,8 +29,9 @@ void ModeGraphique::executer(int iterations) {
     while (fenetre.isOpen() && generationActuelle < iterations) {
         sf::Event event;
         while (fenetre.pollEvent(event)) {
-            if (event.type == sf::Event::Closed)
+            if (event.type == sf::Event::Closed) {
                 fenetre.close();
+            }
             if (event.type == sf::Event::KeyPressed) {
                 if (event.key.code == sf::Keyboard::Space)
                     pause = !pause;
