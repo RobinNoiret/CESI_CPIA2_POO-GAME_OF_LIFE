@@ -40,6 +40,7 @@ void ModeGraphique::executer(int iterations) {
         if (!pause && clock.getElapsedTime().asSeconds() >= delai) {
             jeu.nextGeneration();
             generationActuelle++;
+            jeu.sauvegarderEtat(generationActuelle);
             clock.restart();
         }
 
