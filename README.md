@@ -1,29 +1,30 @@
-# Jeu de la Vie - Projet de Simulation d'Automate Cellulaire en C++
+# Game of Life - Cellular Automaton Simulation Project in C++
 
-## 📝 Description du Projet
-Implémentation du célèbre "Jeu de la Vie" de John Conway en C++. Ce projet vise à créer une simulation d'automate cellulaire avec deux modes d'exécution différents, permettant d'observer l'évolution de cellules selon des règles prédéfinies.
+## 📝 Project Description
+Implementation of John Conway's famous "Game of Life" in C++. This project aims to create a cellular automaton simulation with two different execution modes, allowing observation of cell evolution according to predefined rules.
 
-## 🎯 Objectifs
-- Développer une architecture orientée objet en C++
-- Implémenter deux interfaces utilisateur distinctes (console et graphique)
-- Gérer la persistance des données (lecture/écriture de fichiers)
-- Créer une simulation paramétrable et performante
+## 🎯 Objectives
+- Develop an object-oriented architecture in C++
+- Implement two distinct user interfaces (console and graphical)
+- Manage data persistence (file reading/writing)
+- Create a configurable and efficient simulation
 
-## 🔨 Fonctionnalités à Implémenter
+## 💻 Solution Location
+The solution can be found in the `sandbox` folder.
 
-### Mode Console :
-- Lecture de l'état initial depuis un fichier
-- Génération des n premières itérations
-- Export des résultats dans des fichiers séparés
+## 🔨 Features to Implement
+### Console Mode:
+- Reading initial state from a file
+- Generation of the first n iterations
+- Export results to separate files
 
+### Graphical Mode:
+- User interface with interactive grid
+- Configurable simulation
+- Evolution display
 
-### Mode Graphique :
-- Interface utilisateur avec grille interactive
-- Simulation paramétrable
-- Affichage de l'évolution
-
-## 📋 Spécifications Techniques
-- Langage : C++
-- Interface Graphique : SFML
-- Format des données : Fichiers texte avec format spécifique
-- Architecture : Orientée objet
+## 📋 Technical Specifications
+- Language: C++
+- Graphical Interface: SFML
+- Data Format: Text files with specific format
+- Architecture: Object-oriented
